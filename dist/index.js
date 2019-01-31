@@ -28,9 +28,9 @@ Object.defineProperty(exports, "__esModule", {
 function meganav() {
 	var optsNav = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '[data-meganav]';
 	var optsToggle = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : '[data-meganav-toggle]';
-	var optsHoverClass = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 'is-hover';
-	var optsActiveClass = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : 'is-active';
-	var hover = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : false;
+	var optsActiveClass = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 'is-active';
+	var hover = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : false;
+	var optsHoverClass = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : 'is-hover';
 
 
 	var NAV = document.querySelector(optsNav);

@@ -1,6 +1,6 @@
 {
   "name": "bluegg-meganav",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A nav module, but MEGA",
   "main": "dist/index.js",
   "scripts": {

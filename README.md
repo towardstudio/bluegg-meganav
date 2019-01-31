@@ -2,6 +2,8 @@
 
 This is a **MEGA**nav. It is **MEGA** opinionated. We **MEGA** don't care what you think.
 
+[Obligatory Codepen **MEGA** Demo](https://codepen.io/matthewbeta/details/KJaJLP)
+
 ## Installation
 
 NPM that **MEGA** suckah:
@@ -50,7 +52,7 @@ This is **MEGA** opinionated about your HTML structure. If you want to use it yo
 </nav>
 ```
 
-Nest at infinitum. I will eventually get a **MEGA** demo up on Codepen. Included in the `templates` folder are a couple of **MEGA** twig templates to get you started 😇.
+Nest at infinitum. Included in the `templates` folder are a couple of **MEGA** twig templates to get you started 😇.
 
 ## Arguments
 
