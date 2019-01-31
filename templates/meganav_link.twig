@@ -1,0 +1,35 @@
+{% set hasSubmenu = link.submenu is defined %}
+
+<a href="{{ link.url }}" class="meganav__link" 
+	
+	{% if hasSubmenu %}
+		aria-haspopup="true" 
+		aria-expanded="false" 
+	{% endif %}>
+	
+	Link {{ level }}
+
+</a>
+
+{% if hasSubmenu %}
+
+<ul class="meganav__menu meganav__menu--sub" id="submenu-{{level}}">
+
+	<li class="meganav__item meganav__item--back">
+
+		<button type="button" class="meganav__link meganav__link--back">&lt; Link {{ level }}</button>
+	
+	</li>
+	
+	{% for link in link.submenu %}
+	{% set sublevel = level~'-'~loop.index %}
+	<li class="meganav__item">
+
+		{% include "meganav_link.twig" with {link: link, level: sublevel} only %}
+		
+	</li>
+	{% endfor %}
+
+</ul>
+
+{% endif %}

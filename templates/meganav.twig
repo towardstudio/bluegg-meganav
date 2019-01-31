@@ -1,0 +1,22 @@
+<nav class="meganav" data-meganav>
+
+	<button type="button" aria-haspopup="true" aria-expanded="false" data-meganav-toggle>Toggle Nav</button>
+
+	<ul class="meganav__menu">
+
+			{% for link in nav %}
+
+				<li class="meganav__item">
+					
+					{% include "meganav_link.twig" with {link: link, level: loop.index} only %}
+					
+				</li>
+				<!-- /.meganav__item -->
+			
+			{% endfor %}
+
+		</ul>
+		<!-- /.meganav__menu -->
+
+</nav>
+<!-- /.meganav -->
